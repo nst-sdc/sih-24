@@ -4,114 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIH Team Details - Byte_Knightz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-
-        header {
-            background-color: #282c34;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .team {
-            margin-bottom: 30px;
-        }
-
-        .team h2 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        .team ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .team ul li {
-            background: #f9f9f9;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .idea {
-            margin-bottom: 30px;
-        }
-
-        .idea h2 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        .ppt-container {
-            position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            overflow: hidden;
-        }
-
-        .ppt-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background: #282c34;
-            color: white;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Byte_Knightz - SIH Team Details</h1>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-gray-300">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 py-12 text-center shadow-2xl">
+        <h1 class="text-5xl font-extrabold text-white tracking-wide drop-shadow-md">
+            Byte_Knightz <span class="text-gray-200">- SIH Team Details</span>
+        </h1>
     </header>
-    <main>
-        <section class="team">
-            <h2>Team Members</h2>
-            <ul>
-                <li>Arohi</li>
-                <li>Oashe</li>
-                <li>Yuvraj</li>
-                <li>Roni</li>
-                <li>Sumit</li>
-                <li>Deeptanu</li>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6 py-8 bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl rounded-3xl max-w-4xl">
+
+        <!-- Team Section -->
+        <section class="team mb-12">
+            <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 mb-6">
+                Team Members
+            </h2>
+            <ul class="grid grid-cols-2 gap-6">
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Arohi</span>
+                </li>
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Oashe</span>
+                </li>
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Yuvraj</span>
+                </li>
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Roni</span>
+                </li>
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Sumit</span>
+                </li>
+                <li class="p-4 bg-gradient-to-r from-gray-700 to-gray-600 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+                    <span class="text-xl font-medium text-gray-200 block text-center">Deeptanu</span>
+                </li>
             </ul>
         </section>
+
+        <!-- Idea Presentation Section -->
         <section class="idea">
-            <h2>Idea Presentation</h2>
-            <div class="ppt-container">
-                <iframe src="sih-idea.pdf#toolbar=0&navpanes=0&scrollbar=1" allowfullscreen></iframe>
+            <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-500 mb-6">
+                Idea Presentation
+            </h2>
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-xl" style="padding-top: 56.25%;">
+                <!-- 16:9 Aspect Ratio for iframe -->
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    src="sih-idea.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Byte_Knightz | Smart India Hackathon</p>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-pink-500 via-purple-600 to-blue-500 text-white text-center py-6 mt-12 rounded-t-3xl shadow-lg">
+        <p class="text-lg font-light tracking-wide">
+            &copy; 2024 Byte_Knightz | Smart India Hackathon
+        </p>
     </footer>
+
 </body>
 </html>
